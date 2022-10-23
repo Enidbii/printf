@@ -23,5 +23,4 @@ int all_print_function(const char *i, unsigned int index_a);
 int print_i(va_list args, char *char_c, unsigned int index_c);
 int print_out(char *mem, unsigned int no_mem);
 int print_string(va_list args, char *char_c, unsigned int index_c);
-int print_char(va_list args, char *char_c, unsigned int index_c);
 #endif

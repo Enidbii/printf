@@ -8,10 +8,10 @@
  */
 int (*print_func(const char *i, int index_c))(va_list, char *, unsigned int)
 {
-	print_t pr[] = {
+	print_ft pr[] = {
 		{"c", print_char}, {"s", print_string},
-		{"d", print_i}, {"%", print_per},
-		{NULL, NULL}
+		{"d", print_i}, {" %", print_per},
+		{NULL, NULL},
 	};
 
 	int k = 0, l = 0, index_uno;

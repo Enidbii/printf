@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * _printf - produces output according to a format
  * @format: character string
@@ -12,7 +13,7 @@ int _printf(const char *format, ...)
 	char *char_c;
 
 	va_start(args, format), char_c = malloc(sizeof(char) * 1024);
-	if (!char_c || !format || (format[i] == '%' && !format[i + 1])
+	if (!char_c || !format || (format[i] == '%' && !format[i + 1]))
 			return (-1);
 	if (!format[i])
 	return (0);
@@ -27,7 +28,7 @@ int _printf(const char *format, ...)
 			}
 			else
 			{
-				function = print_function(format, i + 1);
+				function = print_func(format, i + 1);
 				if (function == NULL)
 				{
 					if (format[i + 1] == ' ' && !format[i + 2])
@@ -37,7 +38,7 @@ int _printf(const char *format, ...)
 				else
 				{
 					length = length + function(args, char_c, index_c);
-					i = i + all_print_functions(format, i + 1);
+					i = i + all_print_function(format, i + 1);
 				}
 			}
 			i++;

@@ -25,15 +25,15 @@ int print_i(va_list args, char *char_c, unsigned int index_c)
 	int_i = entry_i;
 	}
 	j = int_i;
-	division = 1
+	division = 1;
 	while (j > 9)
 	{
 		division = division * 10;
 		j = j / 10;
 	}
-	for (i = 0; division > 0; division /= 10; i++)
+	for (i = 0; division > 0; division /= 10, i++)
 	{
-		index_c = charc_handler(char_c, (int_i / div) % 10 + '\0', index_c);
+		index_c = charc_handler(char_c, (int_i / division) % 10 + '\0', index_c);
 	}
 	return (Is_negative);
 }

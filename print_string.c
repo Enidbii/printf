@@ -17,11 +17,11 @@ int print_string(va_list args, char *char_c, unsigned int index_c)
 	if (str == NULL)
 	{
 		for (i = 0; nada[i]; i++)
-			index_c = charc_handler(char_c, nada[i], char_c);
+			index_c = charc_handler(char_c, nada[i], index_c);
 		return (6);
 	}
 
 	for (i = 0; str[i]; i++)
-		index_c = charc_handler(char_c, str[i], char_c);
+		index_c = charc_handler(char_c, str[i], index_c);
 	return (i);
 }

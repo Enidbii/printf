@@ -8,10 +8,10 @@
  */
 int all_print_function(const char *i, unsigned int index_a)
 {
-	print_t pr[] = {
-		{"c", print_c}, {"s", print_string},
+	print_ft pr[] = {
+		{"c", print_char}, {"s", print_string},
 		{"i", print_i}, {"d", print_i},
-		{" %", print_perc}, {NULL, NULL}
+		{" %", print_per}, {NULL, NULL}
 	};
 	int k = 0, l = 0, index_uno;
 
