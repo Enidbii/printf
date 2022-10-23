@@ -6,7 +6,7 @@
  * @index_a: index of identifier
  * Return: identifiers
  */
-int all_print_function(const char *i, index_a)
+int all_print_function(const char *i, unsigned int index_a)
 {
 	print_t pr[] = {
 		{"c", print_c}, {"s", print_string},
